@@ -39,7 +39,10 @@ function getTimeBlocks()
         button.attr("class", "btn saveBtn col-md-1");
         var buttonId = "#button" + i;
         button.attr("id", buttonId);
-        button.text("Save");
+        var buttonSpan = $("<span>").addClass("fa fa-save");
+        button.append(buttonSpan);
+        //button(icon : "ui-icon-disk")
+        
 
         time.append(button);
         container.append(time);
